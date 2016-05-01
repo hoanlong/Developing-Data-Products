@@ -5,8 +5,13 @@ shinyUI(fluidPage(
         sidebarLayout(
                 sidebarPanel(
                         strong("Instruction"),
-                        p("- Chose your age, sex, the time of projection (N), and the type of insurance (death or survival)."),
-                        p("- The probability of death, survival and the remaining life expectancy will be computed."),
+                        p("The Shiny App calculates the mortality tables used by Belgian life insurance companies to derive their tariff and provisions."),
+                        p("Change the following parameters:"),
+                        p("- Age <- Chose the age of the individual to perform the calculation"),
+                        p("- Sex <- Chose the sex of the individual to perform the calculation"),
+                        p("- N <- Chose the time of projection"),
+                        p("- Insurance type <- Chose if you want to perform the calculation for a 'death' or 'survival' insurance type contract"),
+                        p("On the right part of the website, the probability of death, probability of survival and the remaining life expectancy will be computed."),
                         br(),
                         strong("Parameters of the individual and the insurance type"),
                         br(),
